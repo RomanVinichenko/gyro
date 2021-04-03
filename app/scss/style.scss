@@ -1,6 +1,41 @@
 @import "base/variables";
 @import "libs/reset";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/12.0.1/sanitize.min.css"); */
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"); */
 /* @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"); */
+
+body {
+    position: relative;
+    overflow: hidden;
+    min-width: 320px;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1270px;
+}
+
+.page-section {
+    position: relative;
+    padding: 0 0 50px;
+    height: 100vh;
+    background-image: url("../images/page-bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+
+}
+
+.scroll__btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 13px 0 30px;
+    text-align: center;
+}
