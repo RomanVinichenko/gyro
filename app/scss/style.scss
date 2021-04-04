@@ -1,41 +1,59 @@
-@import "base/variables";
 @import "libs/reset";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import "base/vars";
+@import "base/global";
+@import "base/fonts";
 
 /* @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"); */
 
-body {
-    position: relative;
-    overflow: hidden;
-    min-width: 320px;
-    color: #fff;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1270px;
-}
-
-.page-section {
-    position: relative;
-    padding: 0 0 50px;
-    height: 100vh;
-    background-image: url("../images/page-bg.jpg");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.title {
-
-}
-
-.scroll__btn {
-    position: absolute;
+.header {
+    position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
-    padding: 13px 0 30px;
-    text-align: center;
+    top: 30px;
+    z-index: 10;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 30px;
+        font-size: 15px;
+        line-height: 17px;
+        text-transform: uppercase;
+
+        @extend %ubuntu-medium;
+    }
+
+    &__btn {
+        margin-right: 8px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        padding: 6px 28px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__phone {
+        font-size: 16px;
+        line-height: 18px;
+
+        @extend %ubuntu-bold;
+    }
+}
+
+.menu {
+    &__list-item {
+        display: inline-block;
+
+        & + .menu__list-item {
+            padding-left: 20px;
+        }
+    }
+}
+
+.top {
+    background-image: url("../images/top-bg.jpg");
 }

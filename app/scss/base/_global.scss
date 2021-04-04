@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-size: 17px;
+    line-height: 26px;
+    color: #fff;
+
+    @extend %ubuntu-light;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1270px;
+}
+
+.page-section {
+    position: relative;
+    padding: 74 0 50px;
+    min-height: 100vh;
+    background-image: url("../images/page-bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    margin-left: 55px;
+    padding-left: 25px;
+    font-style: 44px;
+    line-height: 53px;
+
+    @extend %sf-regular;
+}
+
+.scroll__btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 13px 0 30px;
+    text-align: center;
+}
