@@ -33,12 +33,20 @@
         text-transform: uppercase;
         color: #fff;
         background-color: transparent;
+        transition: all 0.3s;
         cursor: pointer;
+
+        &:hover {
+            color: #000;
+            background-color: #fff;
+        }
     }
 
     &__phone {
         font-size: 16px;
         line-height: 18px;
+        text-decoration: none;
+        color: #fff;
 
         @extend %ubuntu-bold;
     }
@@ -47,13 +55,67 @@
 .menu {
     &__list-item {
         display: inline-block;
-
-        & + .menu__list-item {
-            padding-left: 20px;
-        }
     }
+
+    &__list-link {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.menu__list-item:not(:first-child) {
+    padding-left: 20px;
 }
 
 .top {
     background-image: url("../images/top-bg.jpg");
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225) 50.29%, rgba(4, 5, 5, 0.82034) 58.72%, rgba(5, 5, 6, 0.7927) 80.08%, #000 87.89%);
+        opacity: 0.4;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 96px;
+        line-height: 115px;
+
+        @extend %sf-semibold;
+    }
+
+    &__text {
+        margin: 25px 0 35px;
+        max-width: 325px;
+    }
+
+    &__social-item {
+        display: inline-block;
+        margin: 0 25px;
+    }
+
+    &__social-link {
+        opacity: 0.5;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
