@@ -47,8 +47,9 @@ body {
 
 .title {
     margin-left: 55px;
+    padding-top: 200px;
     padding-left: 25px;
-    font-style: 44px;
+    font-size: 44px;
     line-height: 53px;
 
     @extend %sf-regular;
