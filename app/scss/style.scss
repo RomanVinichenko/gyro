@@ -3,6 +3,7 @@
 @import "base/vars";
 @import "base/global";
 @import "base/fonts";
+@import "base/media";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
 
 .header {
@@ -242,7 +243,7 @@
             right: -50px;
             top: 58px;
             width: 254px;
-            height: 39px;
+            height: 42px;
             background-image: url("../images/line-3.svg");
         }
 
@@ -511,13 +512,14 @@
     &__form-textarea {
         margin-bottom: 20px;
         width: 100%;
-        min-width: 144px;
+        min-height: 144px;
         box-sizing: border-box;
         resize: none;
     }
 
     &__form-input {
         width: 49%;
+        box-sizing: border-box;
     }
 
     &__form-btn {
@@ -530,7 +532,13 @@
         text-transform: uppercase;
         color: #fff;
         background-color: transparent;
+        transition: all 0.3s;
         cursor: pointer;
+
+        &:hover {
+            color: #000;
+            background-color: #fff;
+        }
 
         @extend %ubuntu-bold;
     }
@@ -544,6 +552,14 @@
 
     &__social-item {
         margin: 14px 0;
+    }
+
+    &__social-link {
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
     &__form-input,

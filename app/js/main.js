@@ -9,3 +9,21 @@ nextArrow:'<button class="slider-btn slider-btn__right"><svg width="10" height="
         $(this).parent().addClass('questions__item--active');
     });
 });
+
+
+const tl = gsap.timline();
+
+tl.fromto('.top', {x: '-100%', y: '+100%'}, {y: 0})
+tl.fromto('.products', {x: '-100%'}, {y: '-200%'})
+tl.fromto('.benefits', {x: '-400%', y: '-300%'}) 
+
+const main = document.querySelector('.main');
+
+ScrollTrigger.create({
+    Animation: tl,
+    trigger: '.container',
+    start: 'top top',
+    end: () => main.offsetwidth / 2,
+    scrub: true,
+    pin: true,
+})
