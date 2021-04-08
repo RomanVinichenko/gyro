@@ -27,3 +27,7 @@ ScrollTrigger.create({
     scrub: true,
     pin: true,
 })
+
+$('.menu__btn').on('click', function(){
+    &('.menu__btn').toggleclass('menu__btn--active');
+});

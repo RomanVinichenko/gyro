@@ -3,7 +3,6 @@
 @import "base/vars";
 @import "base/global";
 @import "base/fonts";
-@import "base/media";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
 
 .header {
@@ -61,6 +60,14 @@
         text-decoration: none;
         color: #fff;
     }
+
+    &__list-phone {
+        display: none;
+    }
+
+    &__btn {
+        display: none;
+    }
 }
 
 .menu__list-item:not(:first-child) {
@@ -77,13 +84,21 @@
         right: 0;
         top: 0;
         bottom: 0;
-        background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225) 50.29%, rgba(4, 5, 5, 0.82034) 58.72%, rgba(5, 5, 6, 0.7927) 80.08%, #000 87.89%);
+        background:
+            radial-gradient(
+                45.97% 54.43% at 50% 45.57%,
+                rgba(23, 26, 28, 0) 50.28%,
+                rgba(23, 26, 28, 0.00225) 50.29%,
+                rgba(4, 5, 5, 0.82034) 58.72%,
+                rgba(5, 5, 6, 0.7927) 80.08%,
+                #000 87.89%
+            );
         opacity: 0.4;
     }
 
     &__wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
     }
 
     &__inner {
@@ -600,3 +615,5 @@
         color: rgba (#fff, 0.64);
     }
 }
+
+@import "base/media";

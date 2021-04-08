@@ -1,3 +1,24 @@
+@media (max-width: 1366px) {
+    .body {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .top__title {
+        margin-bottom: 20px;
+        font-size: 65px;
+        line-height: 90px;
+    }
+
+    .top__inner img {
+        width: 75%;
+    }
+
+    .top__text {
+        margin: 15px 0 25px;
+    }
+}
+
 @media (max-width: 1100px) {
     .menu {
         order: 1;
@@ -8,6 +29,7 @@
     }
 
     .menu__btn {
+        display: block;
         outline: none;
         border: none;
         padding: 0;
@@ -37,5 +59,27 @@
         width: 24px;
         height: 2px;
         background-color: #e0e0e0;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+    .header__btn {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .top__title {
+        display: none;
+    }
+
+    .top__text {
+        margin: 15px 0 45%;
+    }
+
+    .scroll__btn {
+        padding: 13px 0;
     }
 }
