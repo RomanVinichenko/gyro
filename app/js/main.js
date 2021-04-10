@@ -29,5 +29,5 @@ ScrollTrigger.create({
 })
 
 $('.menu__btn').on('click', function(){
-    &('.menu__btn').toggleclass('menu__btn--active');
+    $('.menu__btn').toggleclass('menu__btn--active');
 });
