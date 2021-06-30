@@ -76,6 +76,7 @@
 
 .top {
     background-image: url("../images/top-bg.jpg");
+    background-position: right;
 
     &::before {
         content: "";
@@ -98,7 +99,7 @@
 
     &__wrapper {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
     }
 
     &__inner {
