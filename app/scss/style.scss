@@ -9,7 +9,6 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
   }
 
   &__text {
@@ -91,7 +90,6 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 25px;
   }
 
   &__item {
@@ -202,7 +200,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 25px;
   }
 
   &__box {
@@ -343,7 +340,6 @@
 .contacts {
   &__inner {
     display: flex;
-    padding-left: 25px;
   }
 
   &__info {
