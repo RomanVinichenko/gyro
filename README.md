@@ -1,3 +1,5 @@
+![alt text](https://github.com/RomanVinichenko/portfolio/blob/dev/app/images/gyro.jpg)
+
 # Task: Gyro
 
 To start project you must have installed Node JS on your local PC
