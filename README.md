@@ -1,3 +1,5 @@
+![alt text](https://github.com/krovorgen/gradient-border-cards/blob/master/app/images/preview.PNG)
+
 # Task: Gyro
 
 To start project you must have installed Node JS on your local PC
