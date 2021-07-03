@@ -7,7 +7,7 @@
     "scripts": {
         "slint": "stylelint \"**/*.scss\"",
         "stylelint:fix": "stylelint \"**/*{.css,.scss}\" --fix",
-        "deploy": "gh-pages -d app"
+        "deploy": "gh-pages -d dist"
     },
     "author": "",
     "license": "ISC",
